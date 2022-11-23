@@ -3,6 +3,8 @@ class SpicesController < ApplicationController
     def index
         spices = Spice.all
         render json: spices
+
+        # could also be render json Spice.all
     end
 
     def create 
